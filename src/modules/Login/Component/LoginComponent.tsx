@@ -27,7 +27,7 @@ export default function LoginComponent(props: IProps) {
           {(formProps) => {
             const { invalid, dirty, handleSubmit } = formProps;
             return (
-              <div className="w-[30vw] m-auto">
+              <div className="w-[90vw] md:w-[30vw] m-auto">
                 <div className="flex flex-wrap mt-6 mb-8">
                   <Setting size={46} />
                   <div className="font-poppinsSemiBold text-[26px] pt-2 ml-2 mr-1">
