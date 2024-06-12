@@ -55,7 +55,7 @@ export default function CompanyDetailComponent(props: IProps) {
         <Skeleton active loading={isFetchingCompany}>
           {dataCompany ? (
             <>
-              <div className="flex gap-10">
+              <div className="md:flex gap-10">
                 <div className="h-[150px] w-[150px] relative">
                   <Image
                     src={image}
@@ -76,7 +76,7 @@ export default function CompanyDetailComponent(props: IProps) {
                 </div>
                 <Button
                   type="primary"
-                  className="capitalize"
+                  className="mt-4 md:mt-0 capitalize"
                   onClick={handleUpdate}
                 >
                   {intl.formatMessage({ id: "EDIT" })}
