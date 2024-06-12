@@ -58,8 +58,6 @@ export default function ExportPDFCompanyComponent(props: IProps) {
     src: "/fonts/Inter/Inter-Regular.otf",
   });
 
-  console.log("dataListCompany", dataListCompany);
-
   return (
     <Modal
       open={true}
