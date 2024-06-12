@@ -2,32 +2,311 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "Poppins-BlackItalic";
+  src: url("../assets/fonts/Poppins/Poppins-BlackItalic.ttf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-BoldItalic";
+  src: url("../assets/fonts/Poppins/Poppins-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("../assets/fonts/Poppins/Poppins-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Poppins-ExtraBoldItalic";
+  src: url("../assets/fonts/Poppins/Poppins-ExtraBoldItalic.ttf");
+}
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url("../assets/fonts/Poppins/Poppins-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "Poppins-ExtraLightItalic";
+  src: url("../assets/fonts/Poppins/Poppins-ExtraLightItalic.ttf");
+}
+@font-face {
+  font-family: "Poppins-Italic";
+  src: url("../assets/fonts/Poppins/Poppins-Italic.ttf");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../assets/fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "Poppins-LightItalic";
+  src: url("../assets/fonts/Poppins/Poppins-LightItalic.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../assets/fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins-MediumItalic";
+  src: url("../assets/fonts/Poppins/Poppins-MediumItalic.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Poppins-SemiBoldItalic";
+  src: url("../assets/fonts/Poppins/Poppins-SemiBoldItalic.ttf");
+}
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url("../assets/fonts/Poppins/Poppins-Thin.ttf");
+}
+@font-face {
+  font-family: "Poppins-ThinItalic";
+  src: url("../assets/fonts/Poppins/Poppins-ThinItalic.ttf");
+}
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: url("../assets/fonts/Quicksand/Quicksand-Bold.ttf");
+}
+@font-face {
+  font-family: "Quicksand-Light";
+  src: url("../assets/fonts/Quicksand/Quicksand-Light.ttf");
+}
+@font-face {
+  font-family: "Quicksand-Medium";
+  src: url("../assets/fonts/Quicksand/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../assets/fonts/Quicksand/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: "Quicksand-SemiBold";
+  src: url("../assets/fonts/Quicksand/Quicksand-SemiBold.ttf");
+}
+@font-face {
+  font-family: "InterBlack";
+  src: url("../assets/fonts/Inter/Inter-Black.otf");
+}
+@font-face {
+  font-family: "InterBlackItalic";
+  src: url("../assets/fonts/Inter/Inter-BlackItalic.otf");
+}
+@font-face {
+  font-family: "InterBold";
+  src: url("../assets/fonts/Inter/Inter-Bold.otf");
+}
+@font-face {
+  font-family: "InterBoldItalic";
+  src: url("../assets/fonts/Inter/Inter-ExtraBoldItalic.otf");
+}
+@font-face {
+  font-family: "InterExtraBold";
+  src: url("../assets/fonts/Inter/Inter-ExtraBold.otf");
+}
+@font-face {
+  font-family: "InterExtraBoldItalic";
+  src: url("../assets/fonts/Inter/Inter-ExtraBoldItalic.otf");
+}
+@font-face {
+  font-family: "InterExtraLight";
+  src: url("../assets/fonts/Inter/Inter-ExtraLight.otf");
+}
+@font-face {
+  font-family: "InterExtraLightItalic";
+  src: url("../assets/fonts/Inter/Inter-ExtraLightItalic.otf");
+}
+@font-face {
+  font-family: "InterItalic";
+  src: url("../assets/fonts/Inter/Inter-Italic.otf");
+}
+@font-face {
+  font-family: "InterLight";
+  src: url("../assets/fonts/Inter/Inter-Light.otf");
+}
+@font-face {
+  font-family: "InterLightItalic";
+  src: url("../assets/fonts/Inter/Inter-LightItalic.otf");
+}
+@font-face {
+  font-family: "InterMedium";
+  src: url("../assets/fonts/Inter/Inter-Medium.otf");
+}
+@font-face {
+  font-family: "InterMediumItalic";
+  src: url("../assets/fonts/Inter/Inter-MediumItalic.otf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-Regular.otf");
+}
+@font-face {
+  font-family: "InterSemiBold";
+  src: url("../assets/fonts/Inter/Inter-SemiBold.otf");
+}
+@font-face {
+  font-family: "InterSemiBoldItalic";
+  src: url("../assets/fonts/Inter/Inter-SemiBoldItalic.otf");
+}
+@font-face {
+  font-family: "InterThin";
+  src: url("../assets/fonts/Inter/Inter-Thin.otf");
+}
+@font-face {
+  font-family: "InterThinItalic";
+  src: url("../assets/fonts/Inter/Inter-ThinItalic.otf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Poppins", sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.siderBrand {
+  @apply !bg-white;
+}
+.siderBrand .ant-layout-sider-trigger {
+  @apply bg-brandViolet;
+}
+
+.siderBrand .ant-menu-item,
+.siderBrand .ant-menu-submenu-title,
+.siderBrand .ant-menu-title-content a,
+.siderBrand .ant-menu-item-icon path,
+.siderBrand .ant-menu-submenu-open .ant-menu-submenu-arrow {
+  @apply text-[#9197B3];
+}
+
+.siderBrand .ant-menu-item-selected,
+.siderBrand .ant-menu-item:hover,
+.siderBrand .ant-menu-submenu-title:hover,
+.ant-menu-submenu-popup .ant-menu-item:hover,
+.ant-menu-submenu-popup .ant-menu-item-selected {
+  @apply !bg-brandViolet !text-white;
+}
+.siderBrand .ant-menu-item-selected a,
+.siderBrand .ant-menu-submenu-title:hover a,
+.siderBrand .ant-menu-item:hover path,
+.siderBrand .ant-menu-submenu-title:hover path {
+  @apply !text-white;
+}
+.siderBrand .ant-menu {
+  @apply px-6;
+}
+.menuBrandCollapsed {
+  @apply !px-2;
+}
+.menuBrandCollapsed .ant-menu-item,
+.menuBrandCollapsed .ant-menu-submenu-title {
+  padding-inline: 15px !important;
+  padding-top: 4px !important;
+}
+
+.tableCompanies .ant-tabs-tab-active span {
+  @apply !text-[#00B087];
+}
+
+.tableCompanies .ant-tabs-ink-bar {
+  @apply !bg-[#00B087];
+}
+
+.tblBrand .ant-table-thead .ant-table-cell {
+  @apply !bg-white font-poppinsMedium text-[14px] text-[#B5B7C0];
+}
+
+.tblBrand .ant-table-cell:before {
+  @apply !hidden;
+}
+
+.filterTable .ant-input-group-addon {
+  @apply !bg-[#F9FBFF];
+}
+
+.filterTable input {
+  @apply !border-l-0 !bg-[#F9FBFF];
+}
+
+.tblBrand .ant-pagination .ant-pagination-total-text {
+  @apply font-poppinsMedium text-[14px] text-[#B5B7C0];
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 30px;
+  top: 24px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  @apply bg-brandViolet;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  width: 100vw;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  @apply bg-brandViolet p-4 pt-10;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+.bm-menu .ant-menu-light {
+  @apply !bg-brandViolet;
+}
+.bm-menu a,
+.bm-menu path,
+.bm-menu .ant-menu-submenu-arrow:before,
+.bm-menu .ant-menu-submenu-arrow:after,
+.bm-menu .ant-menu-title-content
+{
+  @apply !text-white;
 }
